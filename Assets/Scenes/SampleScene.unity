@@ -627,6 +627,7 @@ GameObject:
   - component: {fileID: 1051856548}
   - component: {fileID: 1051856547}
   - component: {fileID: 1051856546}
+  - component: {fileID: 1051856551}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -741,12 +742,29 @@ Transform:
   m_GameObject: {fileID: 1051856545}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13917309, y: 0, z: 0, w: 0.9902681}
-  m_LocalPosition: {x: 6.0099998, y: 1.421627, z: 6.3139286}
+  m_LocalPosition: {x: 6.65, y: 0.12, z: 6.3139286}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 133184636}
   m_LocalEulerAnglesHint: {x: 16, y: 0, z: 0}
+--- !u!114 &1051856551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051856545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1679cb81d1b6c8459b440f2adb98b2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  force: 4
+  forceA: 1
+  mass: 1
+  acceleration: 500
+  rb: {fileID: 1051856546}
 --- !u!1 &1066120349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +1144,7 @@ GameObject:
   - component: {fileID: 1683512220}
   m_Layer: 0
   m_Name: ice
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1787,7 +1805,7 @@ PrefabInstance:
     - target: {fileID: 5639202794262202564, guid: 7bc5ba508c9a34942a8f924c256db154, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 2099556518}
+      objectReference: {fileID: 1051856550}
     - target: {fileID: 5639202794262202567, guid: 7bc5ba508c9a34942a8f924c256db154, type: 3}
       propertyPath: m_Name
       value: Camera with SimpleCamFollw
@@ -1985,7 +2003,7 @@ GameObject:
   - component: {fileID: 2116547129}
   m_Layer: 0
   m_Name: ice (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
